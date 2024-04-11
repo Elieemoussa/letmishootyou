@@ -325,7 +325,7 @@ ol {
 }
 
 .side-menu-wrapper {
-	background-color: rgba(246, 137, 97, 0.8);
+	background-color:rgba(221, 169, 128, 0.8);
 	position: fixed;
 	width: 270px;
 	height: 100%;
@@ -431,7 +431,7 @@ ol {
 }
 
 .main-menu  a{
-	color: #8c947d;
+	color: #3d4d32;
 
 }
 
@@ -460,9 +460,7 @@ ol {
 
 .main-menu ul li a:hover,
 .main-menu ul li a.active {
-	/* color: #ddd9ce; */
-	color: #b9c5ad;
-    
+    color: rgba(255, 255, 255, 0.55); /* Transparent text color */
 }
 
 .sm-footer {
@@ -1048,11 +1046,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .gallery-filter li.active {
-	color: #f68961;
+	color: #d1a980;
 }
 
 .gallery-filter li:hover {
-	color: #8c947d;
+	color: #d1a980;
 }
 
 .grid-sizer,
@@ -1217,11 +1215,14 @@ only screen and (min-width: 576px) and (max-width: 767px) {
     width: 100%; /* You can set the width to be the same as the original image */
     height: auto; /* Maintain aspect ratio */
     padding-top: 150%; /* Set the height based on the aspect ratio (assuming a 4:3 aspect ratio) */
-    background-color: #b9c5ad; /* Set the background color to black */
+    background-color: #748873; /* Set the background color to black */
 }
 
 @media (max-width: 1200px) {
     .blank-space {
+        display: none; 
+    }
+	.blank-hide {
         display: none; 
     }
 }
