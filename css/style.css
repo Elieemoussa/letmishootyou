@@ -1161,6 +1161,7 @@ only screen and (min-width: 576px) and (max-width: 767px) {
 
 .gallery-item.gi-big {
 	width: 33.33334%;
+	
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px),
