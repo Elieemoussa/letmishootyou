@@ -307,7 +307,6 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#964F4C; background-color:#964F4C;}
 a{color:#B946AD;}
 a:active, a:focus{background:transparent !important;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
@@ -339,7 +338,6 @@ input:focus, textarea:focus, *:required:focus{border-color:#B946AD !important;}
 
 /* Top Bar */
 #topbar #searchform{color:#B946AD;}
-#topbar #searchform:hover{}
 #topbar #searchform input{color:#FFFFFF; background:#A032AB;}
 #topbar #searchform button{color:#FFFFFF; background:transparent;}
 
@@ -510,7 +508,7 @@ table a, #comments a{background-color:inherit;}
 /* Other
 --------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:650px){
-	/* .scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
+	/* .scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:hidden; overflow-x:hidden;}
 	.scrollable table{margin:0; padding:0; white-space:nowrap;} */
 
 	.inline li{display:block; margin-bottom:10px;}
@@ -538,18 +536,22 @@ table a, #comments a{background-color:inherit;}
 		transform: translate3d(-50%, 0, 0);
 	}
 }
+.participation-outer-container {
+    position: relative;
+	bottom: 210px; 
+	/* background-color: white; */
+}
 
-.marquee {
+.participation-title {
+    max-width: 100%;
     overflow: hidden;
-    white-space: nowrap;
-    animation: marquee 20s linear infinite;
 }
 
 .marquee {
     overflow: hidden;
     animation: 20s linear infinite marquee;
-    position: relative;
-    bottom: 210px; /* Adjust the value as needed */
+
+
 }
 
 .marquee, .marquee p {
@@ -565,6 +567,4 @@ h4, .marquee {
     font-weight: 800;
     line-height: 1;
     margin: 0;
-	/* font-family: "URW Geometric Extended" !important;
-    font-weight: 100; */
 }
