@@ -563,7 +563,8 @@ h4, .marquee {
 }
 .marquee p{
 	font-size: 20.784vw;
-    color: #ca998b;
+    /* color: #ca998b; */
+	color: #474747;
     font-weight: 800;
     line-height: 1;
     margin: 0;
