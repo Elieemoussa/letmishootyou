@@ -494,7 +494,7 @@ table a, #comments a{background-color:inherit;}
 }
 .participation-outer-container {
     position: relative;
-	bottom: 210px; 
+	bottom: 140px; 
 	/* background-color: white; */
 }
 
@@ -528,9 +528,7 @@ h4, .marquee {
 
 .menu {
     list-style-type: none;
-	position: absolute;
-	left: 50%;
-    transform: translateX(-50%);
+	position: static;
     margin: 0;
     padding: 20px;
 	z-index: 2;
