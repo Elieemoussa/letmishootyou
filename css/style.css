@@ -1895,12 +1895,3 @@ only screen and (min-width: 992px) and (max-width: 1200px),
 	color: #b2b2b2;
 	font-weight: 400;
 }
-
-@font-face {
-    font-family:'Thundergood'; 
-    src: url('fonts/Thundergood.ttf')format('truetype');
-
-	font-family:'Thundergood'; 
-    src: url('fonts/Thundergood.ttf')format('truetype');
-
-}
