@@ -603,4 +603,8 @@ h4, .marquee {
 
 }
 
-
+@media screen and (max-width:540px){
+	.menu{
+		display: none;
+	}
+}
