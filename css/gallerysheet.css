@@ -1269,8 +1269,7 @@ html.chrome .gallery .image .img img {
   height: 0;
   overflow: hidden;
   padding: 5px 0 0;
-  transition: height 0.15s ease;
- }
+  transition: height 0.15s ease; }
 
 #menu .dropdown a {
   text-align: left; }
@@ -2319,7 +2318,7 @@ body.listing #content {
         z-index: -2; 
     }
 
-    
+       
 #preloder {
 	position: fixed;
 	width: 100%;
