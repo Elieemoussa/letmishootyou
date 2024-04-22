@@ -1176,7 +1176,7 @@ html.chrome .gallery .image .img img {
   display: inline-block;
   text-decoration: none;
   color: white;
-  font-family: "dune", sans-serif;
+  font-family: 'dune', sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 25px;
@@ -1296,7 +1296,8 @@ html.chrome .gallery .image .img img {
   text-align: left;
   min-height: 30px;
   max-height: 150px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+ }
 
 .footer_text {
   color: #545454;
@@ -2068,7 +2069,9 @@ body.listing #content {
     min-height: 0;
     max-height: none;
     max-width: none;
-    padding-right: 0; }
+    padding-right: 0; 
+    font-size: small !important;
+   }
   #menu_container #logo a img {
     max-width: 100%;
     max-height: 60px;
@@ -2078,8 +2081,10 @@ body.listing #content {
     transition: transform 0.3s ease; }
     #menu_container .menu_padding {
       padding: 1.5em 2em; }
+
   #menu_container #logo a {
-    font-size: calc(8px + 20.0px); }
+    font-size: calc(8px + 10.0px); 
+  }
   .header_container {
     position: relative; }
   .open-mobile-menu #content {
