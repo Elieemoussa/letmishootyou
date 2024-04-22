@@ -16,6 +16,23 @@ body {
     user-select: none; /* Disable selection on standard browsers */
 }
 
+.homebody{
+	background-color: #222222;
+}
+
+.homebody::before {    
+	content: "";
+	background-image: url('/img/background/blackgrain.jpg');
+    background-repeat: repeat; 
+    opacity: 0.08;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; 
+}
+
 
 h1,
 h2,
@@ -1026,7 +1043,6 @@ only screen and (min-width: 576px) and (max-width: 767px),
 	display: inline-block;
 	font-size: 18px;
 	font-weight: 500;
-	color: white;
 	margin-left: 35px;
 	cursor: pointer;
 }
@@ -1056,16 +1072,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
 
 .grid-sizer,
 .gallery-item {
-	width: 16.66667%;
+	width: 100%;
 	/* width: 10%; */
 }
 
-/* @media only screen and (min-width: 1200px) {
-    .grid-sizer,
-    .gallery-item {
-        width:  
-    }
-} */
+
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 	.grid-sizer,
@@ -1895,3 +1906,13 @@ only screen and (min-width: 992px) and (max-width: 1200px),
 	color: #b2b2b2;
 	font-weight: 400;
 }
+
+
+
+
+.carousel-item img {
+    width: 150% !important;
+    height: 150% !important;
+    object-fit: cover !important;
+}
+

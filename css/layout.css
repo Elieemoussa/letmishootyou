@@ -469,7 +469,7 @@ table a, #comments a{background-color:inherit;}
 }
 .participation-outer-container {
     position: relative;
-	bottom: 140px; 
+	bottom: 120px; 
 	/* background-color: white; */
 }
 
@@ -545,8 +545,8 @@ h4, .marquee {
     bottom: -2px;
     left: 0;
     width: 0%;
-    border-bottom: 2px solid #ffffff;
-	font-weight:500;
+    /* border-bottom: 2px solid #ffffff; */
+	font-weight:650;
 }
 
 .homebody{
@@ -564,6 +564,56 @@ h4, .marquee {
     width: 100%;
     height: 100%;
     z-index: -2; 
+}
+
+.vertical-line {
+    position: relative;
+    margin-top: -20px;
+    margin-bottom: 15px;
+}
+
+.vertical-line::after {
+    content: "";
+    position: absolute;
+    left: 50%; /* Move the pseudo-element to the middle horizontally */
+    top: 0;
+    bottom: 0;
+    width: 2px; /* Adjust thickness as needed */
+    background-color: #ccc; /* Color of the line */
+    transform: translateX(-50%); /* Center the pseudo-element */
+}
+
+.titleV3{
+    margin-left: 30px;
+}
+
+.titleV2{
+  padding-top: 30px;
+}
+
+.titleV1{
+	font-family: 'dune';
+	font-size: 0.4rem;
+  }
+
+
+.inspace-23{
+   margin-left: 20px;
+   margin-top: -30px;
+  }
+
+  .image-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 76%; 
+    height: 95%; 
+    background-color: rgba(255, 255, 255, 0.4); 
+    z-index: -1; 
+    transform: translate(-50%, -50%); 
+    backdrop-filter: blur(10px); 
+
 }
 
 
@@ -608,3 +658,4 @@ h4, .marquee {
 		display: none;
 	}
 }
+

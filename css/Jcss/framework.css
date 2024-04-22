@@ -18,7 +18,7 @@ File: Framework CSS
 .uppercase{text-transform:uppercase;}
 .capitalise{text-transform:capitalize;}
 .hidden{display:none;}
-.nospace{margin:0; padding:0; list-style:none;}
+.nospace{margin:0 0 35px 0; padding:0; list-style:none;font-size: medium;}
 .block{display:block;}
 .inline{display:inline-block;}
 .justified{text-align:justify;}
@@ -67,9 +67,9 @@ label{margin-bottom:5px;}
 
 /* Generalise
 --------------------------------------------------------------------------------------------------------------- */
-h1, h2, h3, h4, h5, h6, .heading{margin:0 0 20px 0; font-size:1.4rem; line-height:normal; font-weight:normal; text-transform:capitalize;}
+h1, h2, h3, h4, h5, h6, .heading{margin:0 0 33px 0; font-size:1.4rem; line-height:normal; font-weight:normal; text-transform:capitalize;}
 
-.heading.nospace{margin-bottom:0;}
+
 .heading.underline{display:inline-block; position:relative; padding:0 0 15px 0;}
 .heading.underline::after{display:block; position:absolute; bottom:0; width:25%; height:5px; border-radius:3px; content:"";}
 .center .heading.underline::after, .sectiontitle .heading.underline::after{left:50%; margin-left:-12%;}
@@ -124,6 +124,6 @@ address, article, aside, figcaption, figure, footer, header, main, nav, section{
 
 .inspace-5{padding:5px;}
 .inspace-10{padding:10px;}
-.inspace-15{padding:15px;}
+.inspace-15{padding:30px;}
 .inspace-20{padding:20px;}
 .inspace-30{padding:30px;}
