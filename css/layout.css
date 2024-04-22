@@ -545,7 +545,7 @@ h4, .marquee {
     bottom: -2px;
     left: 0;
     width: 0%;
-    /* border-bottom: 2px solid #ffffff; */
+    border-bottom: 2px solid #ffffff;
 	font-weight:650;
 }
 
@@ -581,6 +581,22 @@ h4, .marquee {
     width: 2px; /* Adjust thickness as needed */
     background-color: #ccc; /* Color of the line */
     transform: translateX(-50%); /* Center the pseudo-element */
+}
+
+
+
+
+@media screen and (max-width:540px) {
+    .vertical-line{
+        display: none;
+    }
+
+    .titleV3{
+        display: none;
+    }
+    .imgbtm{
+        display: none;
+    }
 }
 
 .titleV3{

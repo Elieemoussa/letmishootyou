@@ -1215,7 +1215,7 @@ html.chrome .gallery .image .img img {
   display: inline-block;
   vertical-align: middle;
   zoom: 1;
-  *display: inline;
+
   white-space: nowrap; }
 
 
@@ -1269,20 +1269,23 @@ html.chrome .gallery .image .img img {
   height: 0;
   overflow: hidden;
   padding: 5px 0 0;
-  transition: height 0.15s ease; }
+  transition: height 0.15s ease;
+ }
 
 #menu .dropdown a {
   text-align: left; }
 
 
 
-
 #menu .item.selected > a,
 #menu .category.selected > a {
-  color: white;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: none; }
+  border-bottom: 1px solid rgb(255, 255, 255);
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #ffffff;
+  font-weight:600;
+  
+}
 
 #menu_container .mobile_nav_item {
   display: none; }
@@ -2102,7 +2105,7 @@ body.listing #content {
     height: 22px;
     width: 25px;
     outline: none;
-    top: 50%;
+    top: 64%;
     margin-top: -11px; }
     .mobile-menu-open-button:focus {
       outline: none; }
