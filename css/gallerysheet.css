@@ -1459,12 +1459,21 @@ body.gallery {
     @media only screen and (max-device-width: 767px) and (orientation: portrait) {
       body.gallery #content {
         justify-content: flex-start; } }
+
     body.gallery #content.align-top {
       justify-content: flex-start; }
-  body.gallery #assets_wrap {
+
+    body.gallery #assets_wrap {
     display: flex;
     flex-flow: row nowrap;
-    /* padding-right: 2em;  */
+    padding-left: 2em;  
+    }
+
+  @media only screen and (max-device-width: 767px){
+    
+    body.gallery #assets_wrap {
+      padding-left: 0; 
+    }
   }
   
   body.gallery .asset {
