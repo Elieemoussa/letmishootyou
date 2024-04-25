@@ -1464,7 +1464,9 @@ body.gallery {
   body.gallery #assets_wrap {
     display: flex;
     flex-flow: row nowrap;
-    padding-left: 2em; }
+    /* padding-right: 2em;  */
+  }
+  
   body.gallery .asset {
     height: 100%;
     flex-shrink: 0; }
