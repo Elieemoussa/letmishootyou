@@ -550,7 +550,7 @@ h4, .marquee {
 }
 
 .homebody{
-	font-family: ;
+	font-family:'dim' ;
 }
 
 .vertical-line {
@@ -599,6 +599,11 @@ h4, .marquee {
 	font-size: 0.4rem;
   }
 
+  #titleV1{
+	font-family: 'dim';
+    text-align: center;
+    font-size: 1.8rem;
+  }
 
 .inspace-23{
    margin-left: 20px;
