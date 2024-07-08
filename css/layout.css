@@ -24,7 +24,7 @@
 #pageintro{padding:100px 0 200px;}/* 400px => 200px for #introblocks negative margin */
 #pageintro article, #pageintro article p{display:block; max-width:75%; margin:0 auto; text-align:center;}
 #pageintro article p{max-width:65%; line-height:2rem;}
-#pageintro .heading{margin-bottom:20px; font-size:4rem; font-family:'dune';}
+#pageintro .heading{margin-bottom:20px; font-size:4rem; font-family:'dim';}
 #pageintro footer{margin-top:50px;}
 
 
@@ -45,7 +45,7 @@
 #introblocks figure:hover figcaption div{max-height:1200px; transition-timing-function:cubic-bezier(0.5, 0, 1, 0); transition-delay:0s;}
 #introblocks figure figcaption .heading{padding:14px 0; font-size:0.7rem; font-weight:200; line-height:1;  text-transform: lowercase;}
 #introblocks figure figcaption div p{padding:0 0 20px 0;}
-#introblocks figure figcaption .heading{text-shadow: 0 0 1.2em black , 0 0 1.2em  black; font-family: 'dune'; }
+#introblocks figure figcaption .heading{text-shadow: 0 0 1.2em black , 0 0 1.2em  black; font-family: 'dim'; }
 /* Image Group */
 .imgroup{}
 .imgroup li{margin-bottom:50px;}
@@ -507,7 +507,7 @@ h4, .marquee {
     margin: 0;
     padding: 20px;
 	z-index: 2;
-	font-family: 'dune' !important; 
+	font-family: 'dim' !important; 
   }
 
 
@@ -550,20 +550,7 @@ h4, .marquee {
 }
 
 .homebody{
-	background-color: #222222;
-}
-
-.homebody::before {    
-	content: "";
-	background-image: url('/img/background/blackgrain.jpg');
-    background-repeat: repeat; 
-    opacity: 0.08;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2; 
+	font-family: ;
 }
 
 .vertical-line {
@@ -608,7 +595,7 @@ h4, .marquee {
 }
 
 .titleV1{
-	font-family: 'dune';
+	font-family: 'dim';
 	font-size: 0.4rem;
   }
 
@@ -664,6 +651,16 @@ h4, .marquee {
     font-family: 'dune';
     src: url('/fonts/dune_rise-webfont.woff2') format('woff2'),
          url('/fonts/dune_rise-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'dim';
+    src: url('/fonts/DINCondensed-Bold.woff2') format('woff2');
+       
     font-weight: normal;
     font-style: normal;
 
