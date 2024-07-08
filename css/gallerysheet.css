@@ -1439,7 +1439,8 @@ ul.social_icons li.social_icon a {
 /******* GALLERY  *********/
 body.gallery {
   height: 100%;
-  overflow: hidden; }
+  overflow: hidden; 
+}
   body.gallery .page {
     min-height: 100%;
     display: flex;
@@ -2147,7 +2148,7 @@ body.listing #content {
     height: 100vh;
     margin-left: 0;
     overflow-y: auto;
-    background: #ffffff;
+    background: transparent;
     opacity: 0.01;
     pointer-events: none;
     -webkit-overflow-scrolling: touch;
@@ -2197,21 +2198,25 @@ body.listing #content {
     padding: 12px 0 !important;
     line-height: 21px;
     text-align: left;
-    color: #545454;
-    background: #ffffff;
-    font-family: "Freight Sans Book", "Freight Sans Book", sans-serif;
-    font-size: 21px;
+    color:  #ffffff;
+    background: transparent;
+     /* #545454 */
+    font-family: 'dune', sans-serif;
+    font-size: 15px;
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
     transition: none; }
+
   #menu .item.selected a,
   #menu .category .item.selected a {
-    color: #000000;
-    background: #ffffff;
+    color: rgb(148, 148, 148);
+    background: transparent;
     font-style: normal;
-    font-weight: normal;
-    text-decoration: none; }
+    font-weight: bold;
+    text-decoration: none;
+    
+  }
   #menu .category > div,
   #menu .category a {
     line-height: 21px;
