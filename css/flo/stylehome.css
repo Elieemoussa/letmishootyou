@@ -19338,6 +19338,8 @@ body.flo-decoration-type--wind .flo-icon-quote-right:before {
 }
 
 .flo-mobile-menu__copyright-notice {
+    position: relative;
+    right: 150px;
     margin-bottom: 2.3125rem
 }
 
@@ -19505,11 +19507,13 @@ html .flo-mobile-menu,.body--flo-mobile-menu-popup-closed .flo-mobile-menu {
 .flo-mobile-menu--type-b .flo-mobile-menu__close {
     position: relative;
     font-size: 1.0625rem;
-    margin-bottom: 5.6875rem
+    margin-bottom: 5.6875rem;
+
 }
 
 .flo-mobile-menu--type-b .flo-mobile-menu__menu {
     position: relative;
+    right: 150px;
     margin-bottom: 6.1875rem;
     -webkit-transition: -webkit-transform .5s;
     transition: -webkit-transform .5s;
@@ -19533,7 +19537,7 @@ html .flo-mobile-menu,.body--flo-mobile-menu-popup-closed .flo-mobile-menu {
     position: absolute;
     top: 0;
     left: calc(100% + 2.4375rem);
-    text-align: left;
+    text-align: right;
     padding-bottom: 3.125rem;
     width: 70%
 }
