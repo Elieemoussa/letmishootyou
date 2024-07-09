@@ -19506,6 +19506,7 @@ html .flo-mobile-menu,.body--flo-mobile-menu-popup-closed .flo-mobile-menu {
 
 .flo-mobile-menu--type-b .flo-mobile-menu__close {
     position: relative;
+    /* right: 270px; */
     font-size: 1.0625rem;
     margin-bottom: 5.6875rem;
 
@@ -19513,7 +19514,7 @@ html .flo-mobile-menu,.body--flo-mobile-menu-popup-closed .flo-mobile-menu {
 
 .flo-mobile-menu--type-b .flo-mobile-menu__menu {
     position: relative;
-    right: 150px;
+    right: 160px;
     margin-bottom: 6.1875rem;
     -webkit-transition: -webkit-transform .5s;
     transition: -webkit-transform .5s;
