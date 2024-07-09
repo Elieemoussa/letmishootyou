@@ -1,11 +1,6 @@
 @font-face {
     font-family: 'flo-icons';
-    src: url('../font/flo-icons.eot?2881237');
-    src: url('../font/flo-icons.eot?2881237#iefix') format('embedded-opentype'),
-         url('../font/flo-icons.woff2?2881237') format('woff2'),
-         url('../font/flo-icons.woff?2881237') format('woff'),
-         url('../font/flo-icons.ttf?2881237') format('truetype'),
-         url('../font/flo-icons.svg?2881237#flo-icons') format('svg');
+    src: url('/fonts/flo-icons.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
