@@ -1282,34 +1282,9 @@
                 <div class="flo-block__container">
 
                     <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-4 mb-3">
-                                <a class="d-block">
-                                    <img src="img/gallery/couple/couple1/DSC03422.JPG" alt="Couple 1" class="lazyload">
-                                </a>
-                            </div>
-                            <div class="col-12 col-lg-4 mb-3">
-                                <a class="d-block">
-                                    <img src="img/gallery/couple/couple1/DSC03493.JPG" alt="Couple 2" class="lazyload">
-                                </a>
-                            </div>
-                            <div class="col-12 col-lg-4 mb-3">
-                                <a class="d-block">
-                                    <img src="img/gallery/couple/couple1/DSC03523.JPG" alt="Couple 3" class="lazyload">
-                                </a>
-                            </div>
-                            <div class="col-12 col-lg-4 mb-3">
-                                <a class="d-block">
-                                    <img src="img/gallery/couple/couple1/DSC03462.JPG" alt="Couple 3" class="lazyload">
-                                </a>
-                            </div>
-                            <div class="col-12 col-lg-4 mb-3">
-                                <a class="d-block">
-                                    <img src="img/gallery/couple/couple1/DSC03424.JPG" alt="Couple 3" class="lazyload">
-                                </a>
-                            </div>
+                        <div class="row" id="gallery-row">
+                            <!-- Images will be dynamically inserted here -->
                         </div>
-                    </div>
                 </div>
             </div>
 
@@ -1850,5 +1825,64 @@
 
 
 </body>
+<script>
+    // Function to get URL parameter
+    function getParameterByName(name) {
+        const url = new URL(window.location.href);
+        return url.searchParams.get(name);
+    }
 
+    // Function to load images based on album
+    function loadImages(album) {
+        const galleryRow = document.getElementById('gallery-row');
+        galleryRow.innerHTML = ''; // Clear any existing content
+
+        // Define base path
+        const basePath = `/img/gallery/${album}`;
+
+        // Load images dynamically
+        let i = 1;
+        let imageFound = true;
+        while (imageFound && i <= 10) { // Adjust the loop limit as per your imageCount
+            const img = document.createElement('img');
+            img.src = `${basePath}/${i}.JPG`; // Adjust the image naming pattern as needed
+            img.alt = `Image ${i} of ${album}`;
+            img.className = 'lazyload';
+
+            // Check if the image exists
+            img.onerror = function() {
+                imageFound = false;
+                img.remove(); // Remove the last attempted image element
+            };
+
+            // Create link and column div only if image exists
+            if (imageFound) {
+                const colDiv = document.createElement('div');
+                colDiv.className = 'col-12 col-lg-4 mb-3';
+                const link = document.createElement('a');
+                link.className = 'd-block';
+                link.appendChild(img);
+                colDiv.appendChild(link);
+                galleryRow.appendChild(colDiv);
+            }
+
+            i++;
+        }
+
+        // If no images found
+        if (galleryRow.innerHTML.trim() === '') {
+            galleryRow.innerHTML = 'No images found for this album.';
+        }
+    }
+
+    // Get the album parameter from the URL
+    const album = getParameterByName('album');
+
+    // Load images for the selected album
+    if (album) {
+        loadImages(album);
+    } else {
+        document.getElementById('gallery-row').innerText = 'No album selected';
+    }
+</script>
 </html>
