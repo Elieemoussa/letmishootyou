@@ -9803,7 +9803,7 @@ body.flo-decoration-type--wind .flo-icon-quote-right:before {
         width: 50%
     }
 
-    .flo-block-category-switcher__category:first-child {
+    .flo-block-category-switcher__category:last-child {
         width: 100%
     }
 }
