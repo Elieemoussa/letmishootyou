@@ -363,7 +363,7 @@
     <link rel="stylesheet" id="theme-css-css" href="css/flo/stylehome.css" type="text/css" media="all">
     
     <style id="theme-css-inline-css" type="text/css">
-        @font-face {
+        /* @font-face {
             font-family: "Cormorant Bold";
             src: url('https://shaybenmoussa.com/wp-content/themes/porto2/theme-files/public/fonts/default/Cormorant-Bold.woff') format('woff'), url('https://shaybenmoussa.com/wp-content/themes/porto2/theme-files/public/fonts/default/Cormorant-Bold.ttf') format('truetype');
             font-display: swap;
@@ -373,14 +373,15 @@
             font-family: "Pinyon Script Regular";
             src: url('https://shaybenmoussa.com/wp-content/themes/porto2/theme-files/public/fonts/default/PinyonScript-Regular.woff') format('woff'), url('https://shaybenmoussa.com/wp-content/themes/porto2/theme-files/public/fonts/default/PinyonScript-Regular.ttf') format('truetype');
             font-display: swap;
-        }
+        } */
 
         @font-face {
             font-family: "Butler Regular";
-            src: url('https://shaybenmoussa.com/wp-content/themes/porto2/theme-files/public/fonts/default/Butler_Regular.woff') format('woff'), url('https://shaybenmoussa.com/wp-content/themes/porto2/theme-files/public/fonts/default/Butler_Regular.ttf') format('truetype');
+            src: url('/fonts/Butler_Regular.woff') format('woff'), 
+            url('/fonts/Butler_Regular.ttf') format('truetype');
             font-display: swap;
         }
-
+/* 
         @font-face {
             font-family: "Cormorant Medium";
             src: url('https://shaybenmoussa.com/wp-content/themes/porto2/theme-files/public/fonts/default/Cormorant-Medium.woff') format('woff'), url('https://shaybenmoussa.com/wp-content/themes/porto2/theme-files/public/fonts/default/Cormorant-Medium.ttf') format('truetype');
@@ -403,7 +404,7 @@
             font-family: "Crimson Text Italic";
             src: url('https://shaybenmoussa.com/wp-content/themes/porto2/theme-files/public/fonts/default/CrimsonText-Italic.woff') format('woff'), url('https://shaybenmoussa.com/wp-content/themes/porto2/theme-files/public/fonts/default/CrimsonText-Italic.ttf') format('truetype');
             font-display: swap;
-        }
+        } */
 
         .flo-wp-title .flo-wp-title__title {
             font-family: Cormorant Bold;
@@ -1279,6 +1280,7 @@
                     <noscript class="flo-core-style">
                         <style class="flo-core-style" media="screen">
                             .flo-block-listing-3--878 .flo-block-listing-3__title {
+                                text-transform: uppercase !important;
                                 font-family: Butler Regular;
                                 font-size: 1.1875rem;
                                 letter-spacing: 0em;
@@ -1346,6 +1348,35 @@
                                     display: block
                                 }
                             }
+
+
+                            .flo-block-listing-3__item {
+                                    position: relative;
+                                    display: inline-block;
+                                }
+
+                                .album-icon {
+                                    position: absolute;
+                                    top: 10px; /* Adjust as needed */
+                                    right: 10px; /* Adjust as needed */
+                                    width: 25px; /* Adjust size as needed */
+                                    height: 25px; /* Adjust size as needed */
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    color: white; /* Optional: background color with transparency */
+                                    
+                                }
+
+                                .album-icon svg {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+
+                                .flo-listing__img {
+                                    display: block;
+                                }
+
                         </style>
                     </noscript>
                     <div class="flo-block-listing-3 flo-block-listing-3--878 flo-block-listing-3--is-masonry">
@@ -1353,45 +1384,63 @@
 
                         <a class="flo-block-listing-3__item" href="gallery.html?album=individuals/angela">
                             <img width="768" height="1152" src="img/gallery/individuals/angela/1.jpg" class="flo-listing__img flo-block-listing-3__featured-image wp-post-image lazyload">
+                            <span class="album-icon">
+                                <svg aria-label="Carousel" class="x1lliihq x1n2onr6 x9bdzbf" fill="white"  role="img" viewBox="0 0 48 48" >
+                                    <path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path>
+                                </svg>
+                            </span>
                             <span class="flo-block-listing-3__text-area">
                                 <h2 class="flo-block-listing-3__title">Angela</h2>
                             </span>
                         </a>
 
+
+
                         <a class="flo-block-listing-3__item" href="gallery.html?album=individuals/jadhadid">
                             <img width="768" height="1152" src="img/gallery/individuals/jadhadid/2.jpg" class="flo-listing__img flo-block-listing-3__featured-image wp-post-image lazyload">
+                            <span class="album-icon">
+                                <svg aria-label="Carousel" class="x1lliihq x1n2onr6 x9bdzbf" fill="white"  role="img" viewBox="0 0 48 48" >
+                                    <path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path>
+                                </svg>
+                            </span>
                             <span class="flo-block-listing-3__text-area">
                                 <h2 class="flo-block-listing-3__title">Jad Hadid</h2>
-                                <!-- <span class="flo-block-listing-3__date-and-category ">
-                                    <span class="flo-block-listing-3__date">
-                                        November 20, 2023
-                                    </span>
-                                    /
-                                    <span class="flo-block-listing-3__category">
-                                        COUPLE
-                                    </span>
-                                </span> -->
+                            </span>
+                        </a>
+
+
+                        <a class="flo-block-listing-3__item" href="gallery.html?album=individuals/daneilla">
+                            <img width="768" height="1152" src="img/gallery/individuals/daniella/1.jpg" class="flo-listing__img flo-block-listing-3__featured-image wp-post-image lazyload">
+                            <span class="album-icon">
+                                <svg aria-label="Carousel" class="x1lliihq x1n2onr6 x9bdzbf" fill="white"  role="img" viewBox="0 0 48 48" >
+                                    <path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path>
+                                </svg>
+                            </span>
+                            <span class="flo-block-listing-3__text-area">
+                                <h2 class="flo-block-listing-3__title">Daneilla</h2>
                             </span>
                         </a>
 
                         <a class="flo-block-listing-3__item" href="gallery.html?album=individuals/yaro1">
                             <img width="768" height="1152" src="img/gallery/individuals/yaro1/5.jpg" class="flo-listing__img flo-block-listing-3__featured-image wp-post-image lazyload">
+                            <span class="album-icon">
+                                <svg aria-label="Carousel" class="x1lliihq x1n2onr6 x9bdzbf" fill="white"  role="img" viewBox="0 0 48 48" >
+                                    <path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path>
+                                </svg>
+                            </span>
                             <span class="flo-block-listing-3__text-area">
                                 <h2 class="flo-block-listing-3__title">Yaroslava</h2>
-                                <!-- <span class="flo-block-listing-3__date-and-category ">
-                                    <span class="flo-block-listing-3__date">
-                                        November 20, 2023
-                                    </span>
-                                    /
-                                    <span class="flo-block-listing-3__category">
-                                        COUPLE
-                                    </span>
-                                </span>  -->
+    
                             </span>
                         </a>
 
                         <a class="flo-block-listing-3__item" href="gallery.html?album=couple/couple3">
                           <img width="768" height="1152" src="img/gallery/individuals/clar/6.jpg" class="flo-listing__img flo-block-listing-3__featured-image wp-post-image lazyload">
+                          <span class="album-icon">
+                            <svg aria-label="Carousel" class="x1lliihq x1n2onr6 x9bdzbf" fill="white"  role="img" viewBox="0 0 48 48" >
+                                <path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path>
+                            </svg>
+                        </span>
                           <span class="flo-block-listing-3__text-area">
                               <h2 class="flo-block-listing-3__title">Clarissa</h2>
                               <!-- <span class="flo-block-listing-3__date-and-category ">
@@ -1408,6 +1457,11 @@
 
                         <a class="flo-block-listing-3__item" href="gallery.html?album=individuals/yaro2">
                         <img width="768" height="1152" src="img/gallery/individuals/yaro2/5.jpg" class="flo-listing__img flo-block-listing-3__featured-image wp-post-image lazyload">
+                        <span class="album-icon">
+                            <svg aria-label="Carousel" class="x1lliihq x1n2onr6 x9bdzbf" fill="white"  role="img" viewBox="0 0 48 48" >
+                                <path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path>
+                            </svg>
+                        </span>
                         <span class="flo-block-listing-3__text-area">
                             <h2 class="flo-block-listing-3__title">Yaroslava</h2>
                             <!-- <span class="flo-block-listing-3__date-and-category ">
@@ -1422,13 +1476,18 @@
                         </span> 
                         </a>
 
-                        <a class="flo-block-listing-3__item" href="gallery.html?album=individuals/hilal">
+                    <a class="flo-block-listing-3__item" href="gallery.html?album=individuals/hilal">
                       <img width="768" height="1152" src="img/gallery/individuals/hilal/1.jpg" class="flo-listing__img flo-block-listing-3__featured-image wp-post-image lazyload">
+                      <span class="album-icon">
+                        <svg aria-label="Carousel" class="x1lliihq x1n2onr6 x9bdzbf" fill="white"  role="img" viewBox="0 0 48 48" >
+                            <path d="M34.8 29.7V11c0-2.9-2.3-5.2-5.2-5.2H11c-2.9 0-5.2 2.3-5.2 5.2v18.7c0 2.9 2.3 5.2 5.2 5.2h18.7c2.8-.1 5.1-2.4 5.1-5.2zM39.2 15v16.1c0 4.5-3.7 8.2-8.2 8.2H14.9c-.6 0-.9.7-.5 1.1 1 1.1 2.4 1.8 4.1 1.8h13.4c5.7 0 10.3-4.6 10.3-10.3V18.5c0-1.6-.7-3.1-1.8-4.1-.5-.4-1.2 0-1.2.6z"></path>
+                        </svg>
+                       </span>
                       <span class="flo-block-listing-3__text-area">
                           <h2 class="flo-block-listing-3__title">Hilal</h2>
 
                       </span>
-                        </a>
+                    </a>
 
                     </div>
                 </div>
