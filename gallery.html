@@ -11,6 +11,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Portfolio &ndash; Letmishootyou</title>
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/loader.css">
 
 
     <link rel="stylesheet" id="wp-block-library-css" onload="if(media!='all')media='all'" href="https://shaybenmoussa.com/wp-includes/css/dist/block-library/style.min.css?ver=6.5.5" type="text/css" media="none">
@@ -805,10 +806,10 @@
                 display: none;
             }
 
-            .lazyload[class*="lazy-loader-background-element-"] {
+            /* .lazyload[class*="lazy-loader-background-element-"] {
                 display: block;
                 opacity: 1;
-            }
+            } */
         </style>
     </noscript>
 
@@ -878,7 +879,10 @@
 </head>
 
 <body data-rsssl="1" class="page-template-default page page-id-1726  flo-social-links-type-a flo-sidebar--is-adaptive flo-decoration-type--waves flo-tablet-appear-disabled flo-mobile-appear-disabled">
-
+    
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
 
     <!-- HEADER  -->
 
@@ -1788,6 +1792,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/loader.js"></script>
 
 
 
