@@ -1,15 +1,12 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const loadingScreen = document.getElementById('loading-screen');
-    const content = document.getElementById('content');
-    
+'use strict';
 
-    
-    if (loadingScreen && content) {
-        // Hide the loading screen and show the content
-        loadingScreen.style.display = 'none';
-        content.style.display = 'block';
-    } else {
-        console.error('Elements not found');
-    }
+$(window).on('load', function() {
+    /*------------------
+        Preloader
+    --------------------*/
+    $(".loader").fadeOut();
+    $("#preloder").delay(400).fadeOut("slow", function() {
+        // Show the content after the preloader fades out
+        $("#content").fadeIn("slow");
+    });
 });
-

@@ -133,10 +133,7 @@ textarea {
     height: auto
 }
 
-[type="search"] {
-    -webkit-appearance: textfield;
-    outline-offset: -2px
-}
+
 
 [type="search"]::-webkit-search-decoration {
     -webkit-appearance: none
@@ -187,7 +184,7 @@ body {
     /* line-height:1.5; */
     /* color:#0a0a0a; */
     /* -webkit-font-smoothing:antialiased; */
-    -moz-osx-font-smoothing: grayscale
+
 }
 
 img {
