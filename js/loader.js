@@ -7,6 +7,6 @@ $(window).on('load', function() {
     $(".loader").fadeOut();
     $("#preloder").delay(400).fadeOut("slow", function() {
         // Show the content after the preloader fades out
-        $("#content").fadeIn("slow");
+        // $("#content").fadeIn("slow");
     });
 });
