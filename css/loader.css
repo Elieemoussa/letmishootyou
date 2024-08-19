@@ -17,8 +17,7 @@
     height: 100px; /* Adjust size as needed */
     background: url('/img/icons8-m-96.png') no-repeat center center;
     background-size: contain;
-    animation: zoomInOut 10s infinite; 
-    animation: fadeIn 8s forwards;
+    animation: zoomInOut 10s infinite, fadeInLoader 5s forwards;
 }
 
 @keyframes zoomInOut {
@@ -30,11 +29,22 @@
     }
 }
 
+
 @keyframes fadeIn {
     0% {
         background: rgba(255, 255, 255, 0); /* Transparent */
     }
     100% {
         background: rgba(255, 255, 255, 1); /* Opaque */
+    }
+}
+
+
+@keyframes fadeInLoader {
+    0% {
+        opacity: 0; /* Fully transparent */
+    }
+    100% {
+        opacity: 1; /* Fully opaque */
     }
 }
