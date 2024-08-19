@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     z-index: 9999;
-    animation: fadeInOut 7s infinite; /* Sync with the loader animation */
+    animation: fadeIn 8s forwards;
 }
 
 .loader {
@@ -22,18 +22,18 @@
 
 @keyframes zoomInOut {
     0%, 100% {
-        transform: scale(1);
+        transform: scale(0.5);
     }
     50% {
         transform: scale(1.8);
     }
 }
 
-@keyframes fadeInOut {
-    0%, 100% {
+@keyframes fadeIn {
+    0% {
         background: rgba(255, 255, 255, 0); /* Transparent */
     }
-    50% {
+    100% {
         background: rgba(255, 255, 255, 1); /* Opaque */
     }
 }
