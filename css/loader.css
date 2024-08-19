@@ -17,7 +17,8 @@
     height: 100px; /* Adjust size as needed */
     background: url('/img/icons8-m-96.png') no-repeat center center;
     background-size: contain;
-    animation: zoomInOut 10s infinite; /* Sync with the preloader animation */
+    animation: zoomInOut 10s infinite; 
+    animation: fadeIn 8s forwards;
 }
 
 @keyframes zoomInOut {
