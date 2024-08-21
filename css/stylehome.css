@@ -6697,7 +6697,7 @@ a.thumbnail image {
         -webkit-transition: none;
         transition: none;
         visibility: visible
-    }
+    } 
 
     .position-bottom.reveal-for-medium .close-button {
         display: none
