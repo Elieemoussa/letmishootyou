@@ -11,5 +11,13 @@ $(window).on('load', function() {
 });
 
 
+const element = document.querySelector('.lazyload'); // Adjust the selector as needed
+element.classList.add('lazyloading');
+
+// Simulate an image load or event
+setTimeout(() => {
+    element.classList.remove('lazyloading');
+    element.classList.add('lazyloaded');
+}, 1000); // Adjust the timing as needed
 
 
