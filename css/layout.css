@@ -602,6 +602,13 @@ h4, .marquee {
   #titleV1{
 	font-family: 'dim';
     text-align: center;
+    font-size: 1.8rem;
+    right: 50px;
+  }
+
+  #titleV2{
+	font-family: 'dim';
+    text-align: center;
     font-size: 1.2rem;
     right: -6px;
   }
