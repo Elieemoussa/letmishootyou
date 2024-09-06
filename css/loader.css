@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     z-index: 9999;
-    animation: fadeIn 2s forwards;
+    animation: fadeIn 5s forwards;
 }
 
 .loader {
@@ -17,7 +17,7 @@
     height: 100px; /* Adjust size as needed */
     background: url('/img/icons8-m-96.png') no-repeat center center;
     background-size: contain;
-    animation: zoomInOut 10s infinite, fadeInLoader 5s forwards;
+    animation: zoomInOut 5s infinite, fadeInLoader 5s forwards;
 }
 
 @keyframes zoomInOut {
@@ -25,17 +25,18 @@
         transform: scale(0.5);
     }
     50% {
-        transform: scale(1.8);
+        transform: scale(1);
     }
 }
 
 
 @keyframes fadeIn {
     0% {
-        background: rgba(255, 255, 255, 0); /* Transparent */
+        background: rgba(255, 255, 255, 1); /* Opaque */
+        
     }
     100% {
-        background: rgba(255, 255, 255, 1); /* Opaque */
+        background: rgba(255, 255, 255, 0); /* Transparent */ 
     }
 }
 
