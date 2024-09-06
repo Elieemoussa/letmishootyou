@@ -14372,15 +14372,20 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
     overflow: hidden
 }
 
-.body--flo-mobile-menu-popup-opened .flo-mobile-menu {
-    opacity: 1;
-    pointer-events: initial;
+
+
+.flo-mobile-menu {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
 }
 
-html .flo-mobile-menu,.body--flo-mobile-menu-popup-closed .flo-mobile-menu {
-    opacity: 0;
-    pointer-events: none
+.body--flo-mobile-menu-popup-open .flo-mobile-menu {
+    opacity: 1;
+    pointer-events: auto; /* Allows interaction when the menu is visible */
 }
+
+
 
 @media print,screen and (min-width: 48em) {
     .flo-mobile-menu {
@@ -15142,9 +15147,10 @@ html .flo-mobile-menu,.body--flo-mobile-menu-popup-closed .flo-mobile-menu {
     top: 50%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
-    left: -3.3125rem;
-    font-size: 1.0625rem;
-    line-height: 1;
+    right: -20px;
+    bottom: 20px;
+    font-size: 1.25rem;
+    line-height: 2;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -15211,6 +15217,19 @@ html .flo-mobile-menu,.body--flo-mobile-menu-popup-closed .flo-mobile-menu {
 .reveal-overlay {
     background-color: transparent !important
 }
+
+
+            .flo-mobile-menu {
+                background-image: url(img/auth.JPG)
+            }
+
+            .flo-mobile-menu:before {
+                background-color: rgba(74, 79, 86, 0.87)
+            }
+
+
+
+
 
 .flo-header--type-a,.flo-header--type-b {
     padding: 0 6.375rem;
@@ -20234,7 +20253,7 @@ html.is-reveal-open body {
     z-index: 1006;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    display: none;
+    display: none !important;
     padding: 1rem;
     border: 1px solid #cacaca;
     border-radius: 0;
@@ -21618,7 +21637,7 @@ html.is-reveal-open body {
 
 @media print,screen and (min-width: 48em) {
     .flo-block {
-        padding:3.125rem 6.375rem
+        padding:1.125rem 6.375rem
     }
 
     .flo-block__container {
@@ -23014,7 +23033,7 @@ textarea {
     body:not(.flo-appear-disabled):not(.single-gallery) .layout-sections--scroll-normal .flo-block:not(.visible),body:not(.flo-appear-disabled):not(.single-gallery) .flo_page>.flo-block:not(:first-of-type):not(.disable-appear):not(.visible),body:not(.flo-appear-disabled):not(.single-gallery) .flo-post.with-appear>*:not(.visible),body:not(.flo-appear-disabled):not(.single-gallery) .flo-footer:not(.disable-appear):not(.visible),body:not(.flo-appear-disabled):not(.single-gallery) .to-appear:not(.visible),body:not(.flo-appear-disabled):not(.single-gallery) .widget:not(:first-child):not(.visible) {
         -webkit-transform: translateY(7.5rem);
         transform: translateY(7.5rem);
-        opacity: 0
+        opacity: 1
     }
 
     body:not(.flo-appear-disabled):not(.single-gallery) .layout-sections--scroll-normal .flo-block:nth-child(1n),body:not(.flo-appear-disabled):not(.single-gallery) .flo_page>.flo-block:not(:first-of-type):not(.disable-appear):nth-child(1n),body:not(.flo-appear-disabled):not(.single-gallery) .flo-post.with-appear>*:nth-child(1n),body:not(.flo-appear-disabled):not(.single-gallery) .flo-footer:not(.disable-appear):nth-child(1n),body:not(.flo-appear-disabled):not(.single-gallery) .to-appear:nth-child(1n),body:not(.flo-appear-disabled):not(.single-gallery) .widget:not(:first-child):nth-child(1n) {
@@ -23048,7 +23067,7 @@ textarea {
     body:not(.flo-tablet-appear-disabled):not(.single-gallery) .layout-sections--scroll-normal .flo-block:not(.visible),body:not(.flo-tablet-appear-disabled):not(.single-gallery) .flo_page>.flo-block:not(:first-of-type):not(.disable-appear):not(.visible),body:not(.flo-tablet-appear-disabled):not(.single-gallery) .flo-post.with-appear>*:not(.visible),body:not(.flo-tablet-appear-disabled):not(.single-gallery) .flo-footer:not(.disable-appear):not(.visible),body:not(.flo-tablet-appear-disabled):not(.single-gallery) .to-appear:not(.visible),body:not(.flo-tablet-appear-disabled):not(.single-gallery) .widget:not(:first-child):not(.visible) {
         -webkit-transform: translateY(7.5rem);
         transform: translateY(7.5rem);
-        opacity: 0
+        opacity: 1
     }
 
     body:not(.flo-tablet-appear-disabled):not(.single-gallery) .layout-sections--scroll-normal .flo-block:nth-child(1n),body:not(.flo-tablet-appear-disabled):not(.single-gallery) .flo_page>.flo-block:not(:first-of-type):not(.disable-appear):nth-child(1n),body:not(.flo-tablet-appear-disabled):not(.single-gallery) .flo-post.with-appear>*:nth-child(1n),body:not(.flo-tablet-appear-disabled):not(.single-gallery) .flo-footer:not(.disable-appear):nth-child(1n),body:not(.flo-tablet-appear-disabled):not(.single-gallery) .to-appear:nth-child(1n),body:not(.flo-tablet-appear-disabled):not(.single-gallery) .widget:not(:first-child):nth-child(1n) {
