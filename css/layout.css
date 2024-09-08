@@ -594,16 +594,13 @@ h4, .marquee {
   padding-top: 30px;
 }
 
-.titleV1{
-	font-family: 'dim';
-	font-size: 0.4rem;
-  }
+
 
   #titleV1{
 	font-family: 'dim';
     text-align: center;
     font-size: 1.8rem;
-    right: 50px;
+    right: 34px;
   }
 
   #titleV2{
