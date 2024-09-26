@@ -771,15 +771,14 @@
         var floAjaxUrl = "https:\/\/shaybenmoussa.com\/wp-admin\/admin-ajax.php";
         /* ]]> */
     </script>
-    <script type="text/javascript" src="https://shaybenmoussa.com/wp-content/plugins/flo-instagram/public/js/all.min.js?ver=83797" id="flo-instagram-js"></script>
-    <link rel="https://api.w.org/" href="https://shaybenmoussa.com/wp-json/">
-    <link rel="alternate" type="application/json" href="https://shaybenmoussa.com/wp-json/wp/v2/pages/1726">
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://shaybenmoussa.com/xmlrpc.php?rsd">
-    <meta name="generator" content="WordPress 6.5.5">
-    <link rel="canonical" href="https://shaybenmoussa.com/portfolio/">
-    <link rel="shortlink" href="https://shaybenmoussa.com/?p=1726">
-    <link rel="alternate" type="application/json+oembed" href="https://shaybenmoussa.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshaybenmoussa.com%2Fportfolio%2F">
-    <link rel="alternate" type="text/xml+oembed" href="https://shaybenmoussa.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fshaybenmoussa.com%2Fportfolio%2F&amp;format=xml">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
+    <script type="text/javascript">
+    (function(){
+    emailjs.init({
+        publicKey: "25scb5ckZE3anZ83e",
+    });
+    })();
+    </script>
     <style>
                
         :root {
@@ -801,20 +800,6 @@
         }
 
     </style>
-    <noscript>
-        <style>
-            .lazyload {
-                display: none;
-            }
-
-            /* .lazyload[class*="lazy-loader-background-element-"] {
-                display: block;
-                opacity: 1;
-            } */
-        </style>
-    </noscript>
-
-
     <style media="screen">
         /* START: GENERICS */
 
@@ -1381,43 +1366,44 @@
                     <form id="contactForm">
                         <div class="mb-3">
                             <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="firstName" required>
+                            <input type="text" class="form-control" id="firstName" name="firstName" autocomplete="given-name" required>
                         </div>
                         <div class="mb-3">
                             <label for="lastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" required>
+                            <input type="text" class="form-control" id="lastName" name="lastName" autocomplete="family-name" required>
                         </div>
                         <div class="mb-3">
                             <label for="referral" class="form-label">How did you hear about me?</label>
-                            <input type="text" class="form-control" id="referral" required>
+                            <input type="text" class="form-control" id="referral" name="referral" autocomplete="off" required>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Your Email</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
                         </div>
                         <div class="mb-3">
                             <label for="phone" class="form-label">Phone Number</label>
-                            <input type="tel" class="form-control" id="phone" required>
+                            <input type="tel" class="form-control" id="phone" name="phone" autocomplete="tel" required>
                         </div>
                         <div class="mb-3">
                             <label for="jobType" class="form-label">Your Job Type</label>
-                            <select class="form-select" id="jobType" required>
+                            <select class="form-select" id="jobType" name="jobType" autocomplete="off" required>
                                 <option value="">Select one...</option>
                                 <option value="Job1">PHOTOGRAPHER</option>
                                 <option value="Job2">VIDEOGRAPHER</option>
-                                <option value="Job2">OTHER</option>
+                                <option value="Job3">OTHER</option>
                             </select>
                         </div>
                         <div class="mb-3">
                             <label for="proposedDate" class="form-label">Proposed Date(s)</label>
-                            <input type="date" class="form-control" id="proposedDate" required>
+                            <input type="date" class="form-control" id="proposedDate" name="proposedDate" autocomplete="off" required>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
-                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                            <textarea class="form-control" id="message" name="message" rows="4" autocomplete="off" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Submit</button>
                     </form>
+                    
                 </div>
             </div>
         </div>
@@ -1793,6 +1779,7 @@
 
 <script type="text/javascript" src="js/loader.js"></script>
 <script type="text/javascript" src="js/menuslide.js"></script>
+<script src="js/formHandler.js" defer></script>
 
 
 </div>
