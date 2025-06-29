@@ -27,6 +27,19 @@
     animation: zoomInOut 5s infinite, fadeInLoader 5s forwards;
 }
 
+
+        .lazyloading {
+        filter: blur(4px);
+        opacity: 0.5;
+        transition: all 0.5s;
+        }
+        .lazyloaded {
+        filter: none;
+        opacity: 1;
+        transition: all 0.5s;
+        }
+
+
 @keyframes zoomInOut {
     0%, 100% {
         transform: scale(0.5);

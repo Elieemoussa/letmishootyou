@@ -1908,6 +1908,16 @@ only screen and (min-width: 992px) and (max-width: 1200px),
 	font-weight: 400;
 }
 
+.lazyloading {
+  filter: blur(4px);
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+.lazyloaded {
+  filter: none;
+  opacity: 1;
+  transition: all 0.5s;
+}
 
 
 
